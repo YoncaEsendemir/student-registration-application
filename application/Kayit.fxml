@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="OrgKayit" prefHeight="579.0" prefWidth="560.0" style="-fx-background-color: #b5babd;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.KayitControlleryeni">
+   <children>
+      <Pane layoutX="20.0" layoutY="71.0" prefHeight="495.0" prefWidth="299.0" style="-fx-border-color: #fafafa; -fx-border-radius: 10;">
+         <children>
+            <Label layoutX="12.0" layoutY="26.0" prefHeight="17.0" prefWidth="37.0" text="Ad :">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="64.0" prefHeight="17.0" prefWidth="44.0" text="Soyad :">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt_adK" layoutX="64.0" layoutY="20.0" prefHeight="20.0" prefWidth="184.0" style="-fx-background-color: none;" styleClass="txt_class" />
+            <Label layoutX="6.0" layoutY="306.0" prefHeight="17.0" prefWidth="37.0" text="Şifre :">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="7.0" layoutY="349.0" prefHeight="17.0" prefWidth="37.0" text="Sınıf :">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="6.0" layoutY="386.0" prefHeight="17.0" prefWidth="55.0" text="Fakülte :">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="9.0" layoutY="424.0" prefHeight="17.0" prefWidth="55.0" text="Bölüm :">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="combx_sinif" layoutX="61.0" layoutY="344.0" prefHeight="20.0" prefWidth="184.0" style="-fx-background-color: none;" styleClass="bombox" />
+            <ComboBox fx:id="combx_fakulte" layoutX="63.0" layoutY="380.0" onAction="#combx_fakulte_sec" prefHeight="20.0" prefWidth="184.0" style="-fx-background-color: none;" styleClass="bombox" />
+            <ComboBox fx:id="combx_bolum" layoutX="61.0" layoutY="418.0" onAction="#combx_bolum_sec" prefHeight="20.0" prefWidth="184.0" style="-fx-background-color: none;" styleClass="bombox" />
+            <Button fx:id="btn_kayitOrg" layoutX="188.0" layoutY="458.0" mnemonicParsing="false" onAction="#btn_kayitOrg_click" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: none; -fx-border-color: #fafafa; -fx-border-radius: 5;" styleClass="kayitBtn" text="Kayit ol" textFill="#e1dede">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Label layoutX="7.0" layoutY="175.0" prefHeight="17.0" prefWidth="44.0" text="Adres :">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+            </Label>
+           
+            <Label layoutX="8.0" layoutY="105.0" prefHeight="17.0" prefWidth="54.0" text="Anne Ad:">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt_AnneAd" layoutX="65.0" layoutY="93.0" prefHeight="20.0" prefWidth="184.0" style="-fx-background-color: none;" styleClass="txt_class" />
+            <Label layoutX="8.0" layoutY="138.0" prefHeight="17.0" prefWidth="55.0" text="Baba Ad:">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt_BabaAd" layoutX="64.0" layoutY="132.0" prefHeight="20.0" prefWidth="184.0" style="-fx-background-color: none;" styleClass="txt_class" />
+            <TextField fx:id="txt_tel" layoutX="61.0" layoutY="238.0" prefHeight="20.0" prefWidth="184.0" style="-fx-background-color: none;" styleClass="txt_class" />
+            <Label layoutX="7.0" layoutY="245.0" prefHeight="17.0" prefWidth="37.0" text="Tel :">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="6.0" layoutY="279.0" prefHeight="17.0" prefWidth="44.0" text="E-Posta:">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt_Eposta" layoutX="62.0" layoutY="271.0" prefHeight="20.0" prefWidth="184.0" style="-fx-background-color: none;" styleClass="txt_class" />
+            <TextArea fx:id="txt_adres" layoutX="61.0" layoutY="164.0" prefHeight="68.0" prefWidth="200.0" />
+            <Label fx:id="lblsifre" layoutX="57.0" layoutY="326.0" prefHeight="17.0" prefWidth="207.0" text=" sifre 4 karakterden oluşmalı ">
+               <font>
+                  <Font name="Candara" size="10.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="txt_sifreK" layoutX="61.0" layoutY="300.0" prefHeight="25.0" prefWidth="184.0" styleClass="txt_class" />
+            <Label fx:id="lblNo" layoutX="23.0" layoutY="465.0" prefHeight="17.0" prefWidth="109.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="334.0" layoutY="70.0" prefHeight="286.0" prefWidth="222.0" style="-fx-border-color: #fafafa; -fx-border-radius: 10;">
+         <children>
+            <ImageView fx:id="img_foto" blendMode="MULTIPLY" fitHeight="150.0" fitWidth="176.0" layoutX="34.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ogreci2.jpg" />
+               </image>
+            </ImageView>
+            <RadioButton fx:id="rdbtn_kiz" layoutX="29.0" layoutY="182.0" mnemonicParsing="false" onAction="#rdbtn_kiz_click" text="Kız " textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rdbtn_erkek" layoutX="29.0" layoutY="218.0" mnemonicParsing="false" onAction="#rdbtn_erkek_click" text="Erkek" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </Pane>
+      <Label alignment="CENTER" layoutX="125.0" layoutY="42.0" prefHeight="18.0" prefWidth="308.0" text="Oğrenci Kayit Formu" textFill="WHITE">
+         <font>
+            <Font name="Serif Regular" size="20.0" />
+         </font>
+      </Label>
+      <Pane layoutX="333.0" layoutY="442.0" prefHeight="123.0" prefWidth="222.0" style="-fx-border-color: #fafafa; -fx-border-radius: 10;">
+         <children>
+            <Label layoutX="3.0" layoutY="75.0" prefHeight="17.0" prefWidth="87.0" text="Acil İletişim Tel:">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt_acilTel" layoutX="90.0" layoutY="69.0" prefHeight="26.0" prefWidth="129.0" style="-fx-background-color: none;" styleClass="txt_class" />
+            <Label layoutX="1.0" layoutY="25.0" prefHeight="17.0" prefWidth="71.0" text="Kan Grupu:">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="6.0" prefHeight="17.0" prefWidth="94.0" text="Sağlık Bilgileri:" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="combx_kanGb" layoutX="84.0" layoutY="26.0" prefHeight="26.0" prefWidth="136.0" style="-fx-background-color: none;" styleClass="bombox" />
+         </children>
+      </Pane>
+      <Button fx:id="btn_Cik" layoutX="516.0" mnemonicParsing="false" onAction="#btn_Cik_click" prefHeight="23.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-color: #fafafa; -fx-border-radius: 0;" text="X" textFill="#e1dede">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txt_soyadK" layoutX="85.0" layoutY="127.0" prefHeight="20.0" prefWidth="184.0" style="-fx-background-color: none;" styleClass="txt_class" />
+      <Button fx:id="btn_geri" layoutX="473.0" mnemonicParsing="false" onAction="#btn_geri_click" prefHeight="23.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-color: #fafafa; -fx-border-radius: 0;" text="&lt;-" textFill="#e1dede">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

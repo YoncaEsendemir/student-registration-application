@@ -1,0 +1,103 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.denemebtn {
+-fx-background-color:"#b7b7bd";
+-fx-border-width:1 1 1 1;
+-fx-border-color:black;
+-fx-border-radius: 5;
+}
+
+.denemebtn:hover{
+	-fx-background-color:#e6e6f2;
+}
+
+
+.kayitBtn:hover {
+	-fx-background-color:#9d9d9e;
+}
+
+.orgGosterpane{
+	-fx-border-radius:7;
+	-fx-border-color: white;
+	-fx-border-width:1 1 1 1 ;
+}
+
+.txt_class{
+	-fx-background-color:none;
+	-fx-border-color: black;
+	-fx-border-width:0 0 1 0 ;
+}
+
+
+.bombox{
+	-fx-border-color: black;
+	-fx-border-width:0 0 1 0 ;
+}
+
+.textareaClass{
+	-fx-background-color: #656670;
+    -fx-border-color: black;
+	-fx-border-width:0 0 1 0 ;
+}
+
+.btnMenuYek{
+-fx-pref-height:45;
+-fx-pref-width:160;
+-fx-border-width:1 1 1 1;
+-fx-border-color:#fff;
+-fx-text-fill:white;
+}
+
+.btnMenuYek:hover{
+-fx-background-color:#e6e6f2;
+
+}
+
+.tableview{
+	
+	-fx-background-color: linear-gradient(#b8c8db 0%, #dbd5c3  100%);
+	-fx-border-color:#2d777d;
+	-fx-border-width:1px;
+	-fx-border-style:solid;
+}
+
+.tableview:focused{
+	-fx-border-color:#59c6cf;
+}
+
+.tableview .colum{
+	
+	-fx-background-color:#8c8c8f;
+	-fx-border-width:2px;
+	-fx-border-color:transparent transparent #2d777d transparent;
+	
+	}
+	
+.tableview .colum-header{
+	-fx-background-color:transparent;
+}
+
+.tableview .colum .label{
+	-fx-text-fill:white;
+}
+
+.yetkilibtnGoster{
+	-fx-background-color:#e6e6e6;
+-fx-border-width:2;
+-fx-border-color:black;
+-fx-border-radius: 5;
+}
+
+.yetkilibtnGoster:hover{
+	-fx-background-color:#4e688a;
+	-fx-text-fill:white;
+}
+
+
+.yetkiliDuzenlebtn:focused{
+    -fx-background-color:#d8d8e3;
+	-fx-text-fill:#070708;
+}
+
+.yetkiliDuzenleForm{
+	-fx-background-color: linear-gradient(#dadbe0 0%, #edeff0  100%);
+}

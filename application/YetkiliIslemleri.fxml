@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="YetkiliIslemForm" prefHeight="470.0" prefWidth="800.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.YetkiliIslemleriController">
+   <children>
+      <SplitPane dividerPositions="0.205628948879954" prefHeight="460.0" prefWidth="690.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="498.0" prefWidth="140.0" style="-fx-background-color: #4a4f59;">
+               <children>
+                  <Pane layoutX="8.0" layoutY="32.0" prefHeight="133.0" prefWidth="146.0" style="-fx-border-radius: 50; -fx-background-color: #cfd3e3;">
+                     <children>
+                        <ImageView blendMode="MULTIPLY" fitHeight="125.0" fitWidth="135.0" layoutX="8.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@okulsimge.jpg" />
+                           </image></ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="2.0" layoutY="256.0" prefHeight="214.0" prefWidth="160.0" style="-fx-border-radius: 50; -fx-background-color: #4a4f59;">
+                     <children>
+                        <VBox prefHeight="206.0" prefWidth="160.0">
+                           <children>
+                              <Button fx:id="btnAnaMenu11" alignment="CENTER" mnemonicParsing="false" onAction="#btnAnaMenu_click" prefHeight="0.0" prefWidth="0.0" style="-fx-background-color: none; -fx-border-color: #fff;" styleClass="btnMenuYek" text="Ana Menü" textFill="WHITE" textOverrun="CLIP">
+                                 <effect>
+                                    <InnerShadow>
+                                       <color>
+                                          <Color red="0.4842105209827423" green="0.4806237816810608" blue="0.4806237816810608" opacity="0.8799999952316284" />
+                                       </color>
+                                    </InnerShadow>
+                                 </effect>
+                                 <font>
+                                    <Font name="Microsoft Sans Serif" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnKayitListe11" alignment="CENTER" mnemonicParsing="false" onAction="#btnKayitListe_click" prefHeight="0.0" prefWidth="0.0" style="-fx-background-color: none; -fx-border-color: #fff;" styleClass="btnMenuYek" text="Kayit Görüntüle" textFill="WHITE" textOverrun="CLIP">
+                                 <effect>
+                                    <InnerShadow>
+                                       <color>
+                                          <Color red="0.4842105209827423" green="0.4806237816810608" blue="0.4806237816810608" opacity="0.8799999952316284" />
+                                       </color>
+                                    </InnerShadow>
+                                 </effect>
+                                 <font>
+                                    <Font name="Microsoft Sans Serif" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnKayitGuncele11" alignment="CENTER" mnemonicParsing="false" onAction="#btnKayitGuncele_click" prefHeight="0.0" prefWidth="0.0" style="-fx-background-color: none; -fx-border-color: #fff;" styleClass="btnMenuYek" text="Kayit Düzenle" textFill="WHITE" textOverrun="CLIP">
+                                 <effect>
+                                    <InnerShadow>
+                                       <color>
+                                          <Color red="0.4842105209827423" green="0.4806237816810608" blue="0.4806237816810608" opacity="0.8799999952316284" />
+                                       </color>
+                                    </InnerShadow>
+                                 </effect>
+                                 <font>
+                                    <Font name="Microsoft Sans Serif" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnRapor11" alignment="CENTER" mnemonicParsing="false" onAction="#btnRapor_click" prefHeight="0.0" prefWidth="0.0" style="-fx-background-color: none; -fx-border-color: #fff;" styleClass="btnMenuYek" text="Rapor Görüntüle" textFill="WHITE" textOverrun="CLIP">
+                                 <effect>
+                                    <InnerShadow>
+                                       <color>
+                                          <Color red="0.4842105209827423" green="0.4806237816810608" blue="0.4806237816810608" opacity="0.8799999952316284" />
+                                       </color>
+                                    </InnerShadow>
+                                 </effect>
+                                 <font>
+                                    <Font name="Microsoft Sans Serif" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnCik11" alignment="CENTER" mnemonicParsing="false" onAction="#btnCik_click" prefHeight="0.0" prefWidth="0.0" style="-fx-background-color: none; -fx-border-color: #fff;" styleClass="btnMenuYek" text="Çikiş" textFill="WHITE" textOverrun="CLIP">
+                                 <effect>
+                                    <InnerShadow>
+                                       <color>
+                                          <Color red="0.4842105209827423" green="0.4806237816810608" blue="0.4806237816810608" opacity="0.8799999952316284" />
+                                       </color>
+                                    </InnerShadow>
+                                 </effect>
+                                 <font>
+                                    <Font name="Microsoft Sans Serif" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="SagAncherPane" minHeight="0.0" minWidth="0.0" prefHeight="460.0" prefWidth="640.0" style="-fx-background-color: #dae3e8;">
+               <children>
+                  <AnchorPane fx:id="PaneRaporGoster" prefHeight="468.8" prefWidth="631.2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <TextArea layoutY="57.0" prefHeight="75.0" prefWidth="631.0" style="-fx-background-color: none;" text="Bu rapor, bir Öğrenci Kayıt Sistemi Otomasyonu'nun tasarımı, geliştirilmesi ve uygulanması hakkında detaylı bir incelemeyi&#10; sunmaktadır. Öğrenci kayıt süreçlerinin yönetimi, izlenmesi ve raporlanması, birçok eğitim kurumu için karmaşık ve zaman &#10;alıcı bir süreç olabilir. Bu sebeple, manuel işlemlerin yerine daha verimli, hızlı ve hatasız bir sistem olan otomasyon,&#10; bu sorunu çözmek için ideal bir çözüm sunar.">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </TextArea>
+                        <Label fx:id="lblAltBas2" layoutX="2.0" layoutY="136.0" text="İşlevsel Gereksinimler:" />
+                        <TextArea layoutX="3.0" layoutY="158.0" prefHeight="62.0" prefWidth="631.0" text="Yetkili kişi tarafından Öğrenci listeleme, öğrenci kayıt düzenleme ve tablodan bir öğrenciye tiklayarak göster butona &#10;tıklayarak  istenen  öğrencinin bilgileri getirilir. Öğrenci ise kayıt belgesini doldurur ve ona verilen Öğrenci numarasi &#10;ile kendi bilgilerini görüntüler. Giriş kısmında ise yetkili giriş ve Öğrenci girişi mevcut .&#10;">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </TextArea>
+                        <Label fx:id="lblAltBas1" layoutX="2.0" layoutY="36.0" text="Giriş" />
+                        <Label fx:id="lblAltBas3" layoutX="4.0" layoutY="236.0" text="Sistem Mimarisi :" />
+                        <TextArea layoutY="296.0" prefHeight="56.0" prefWidth="631.0" text="Veritabani Sistemi 4 ayrı tablo vardir fakülteleri, bölümleri, yetkili kişilerin ve öğrencilerin kayıtları tutulduğu yer. Fakülteler ve &#10; bölümlerin yabanci anahateri ile ilişkilendirilmiştir, fakülteler ve bölümlerde oğrenci tablosu ile ilişkilendirilmştir.&#10;">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </TextArea>
+                        <TextField layoutX="99.0" layoutY="231.0" prefHeight="26.0" prefWidth="294.0" text="JavaFx, SceneBuilder ve mysql veritabanı ile geliştirilmiştir.">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </TextField>
+                        <Label fx:id="lblAltBas4" layoutX="2.0" layoutY="269.0" text="Veritabanı Tasarımı :" />
+                        <Label fx:id="lblAltBas5" layoutX="4.0" layoutY="362.0" text="Güvenlik Özellikleri:" />
+                        <TextArea layoutY="382.0" prefHeight="56.0" prefWidth="631.0" text="Yetkili ve öğrenci giriş kısmında çeşitli doğrulamalar bulunmaktadır ve öğrenci kayıtlarda textfild’larda çetitli doğrulamalar &#10;bulunmaktadir isim, soyad vs textfild’ların da rakam girilemez veya rakam girilmesi gerektiği yerlerde harf girilemez.&#10; Öğrenci bilgilerini görüntüleyebilir ama değiştiremez gibi önlemler alınmıştır. ">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </TextArea>
+                        <Label fx:id="lblBaslik" contentDisplay="CENTER" layoutX="99.0" layoutY="14.0" prefHeight="30.0" prefWidth="370.0" text="Öğrenci Kayıt Sistemi Otomasyon Raporu" textFill="#2d2e40">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
